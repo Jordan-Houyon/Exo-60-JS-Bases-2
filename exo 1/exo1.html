@@ -8,7 +8,20 @@
 	
 	function change_liste()
 		{
+			let elem = document.querySelectorAll("li");
+			let list = document.querySelector("ul");
+			list.className = "test";
+			console.log(elem);
+			console.log(list);
 
+			for (let i = 0; i < elem.length; i++){
+				elem[i].innerText = "blabla";
+			}
+
+			if (list.hasAttribute){
+				alert("oui");
+				list.className = "test";
+			}
 			
 		
 		}
